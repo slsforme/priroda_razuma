@@ -15,3 +15,15 @@ env.*
 
 celerybeat-schedule
 celerybeat.pid
+
+.idea
+.vscode
+.DB_Store
+*~
+.*.sw?
+.cache
+
+migrations/
+alembic.ini
+
+.log
