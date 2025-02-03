@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 
+
 class AbstractRepository(ABC):
     @abstractmethod
     async def add():

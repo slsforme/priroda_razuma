@@ -1,37 +1,27 @@
-from pydantic import (
-    BaseModel,
-    EmailStr, 
-    constr,
-    field_validator,
-    ValidationError
-)
 from datetime import datetime
 from typing import Optional
+from pydantic import BaseModel, EmailStr, constr, field_validator, ValidationError
 
 
-class Role(BaseModel):
-    name: constr(min_length=3, max_length=255)
-    description: Optional[str]
+class UserBase(BaseModel):
+    fio: constr(min_length=3, max_length=255)
+    login: constr(min_length=3, max_length=50)
+    role_id: int
 
 
-class User(BaseModel):
-    fio: str
-    created_at: datetime
-    login: constr(min_length=5, max_length=50)
-    password: str 
-    email: EmailStr
-    role: Role
-
-    @field_validator('password')
-    @classmethod
-    def check_password_length(cls, value: str):
-        if len(value) != 64:
-            raise ValidationError('Пароль незахеширован или же технология хеширования является недопустимой.')
-        return value
+class UserCreate(UserBase):
+    password: constr(min_length=6, max_length=64)
 
 
+class UserUpdate(UserBase):
+    fio: Optional[constr(min_length=3, max_length=255)] = None
+    login: Optional[constr(min_length=3, max_length=50)] = None
+    password: Optional[constr(min_length=6, max_length=64)] = None
+    role_id: Optional[int] = None
 
 
+class UserInDB(UserBase):
+    id: int
 
-
-
+    class Config:
+        from_attributes = True
