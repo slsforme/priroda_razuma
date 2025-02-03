@@ -1,11 +1,25 @@
 from schemas.users import User
 from typing import List
+from .base import AbstractRepository
 
-class UserRepository:
+
+
+class UserRepository(AbstractRepository):
     
-    def get_users(self) -> List[User]:
+    async def get(self) -> List[User]:
         ...
     
-    def create_user(self) -> User:
+    async def add(self) -> User:
         ...
+
+    async def update(self):
+        ...
+
+    async def delete(self):
+        ...
+
+    async def get_by_id(self):
+        ...
+
+        
 
