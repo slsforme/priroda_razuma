@@ -1,13 +1,13 @@
 from typing import List, Dict
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
-from sqlalchemy import update, select
+from sqlalchemy import update, select, delete
 
 from db.db import connection
-from models.models import User
+from models.models import Patient
 from .base import BaseRepository
 
 
-class UserRepository(BaseRepository):
+class PatientRepository(BaseRepository):
     def __init__(self):
-        super().__init__(User)
+        super().__init__(Patient)

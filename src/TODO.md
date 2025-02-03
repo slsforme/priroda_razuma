@@ -1,4 +1,4 @@
-# TODO:
+# TODO back-end:
     - CRUD для документов
     - CRUD для пациентов
     - Кэширование (Redis)
@@ -8,3 +8,6 @@
     - Dockerfile
     - Dockercompose
     - Тестирование API
+
+# TODO front-end:
+    - при отправке даты применять к строкам strip()

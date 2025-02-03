@@ -18,7 +18,7 @@ router = APIRouter(prefix="/users", tags=["users"])
 async def get_users(
     user_service: UserService = Depends(get_user_service),
 ) -> List[UserInDB]:
-    users = await user_service.get_users()
+    users = await user_service.get_all_objects()
     if not users:
         return None
     return users
@@ -35,7 +35,7 @@ async def create_user(
     user_service: UserService = Depends(get_user_service),
 ):
     try:
-        user = await user_service.create_user(data)
+        user = await user_service.create_object(data)
         return user
     except ValueError as e:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
@@ -51,7 +51,7 @@ async def get_user_by_id(
     user_id: int,
     user_service: UserService = Depends(get_user_service),
 ) -> UserInDB:
-    result = await user_service.get_user_by_id(user_id)
+    result = await user_service.get_object_by_id(user_id)
     if not result:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND, detail="Пользователь не был найден."
@@ -67,7 +67,7 @@ async def get_user_by_id(
 async def update_user(
     user_id: int, data: UserInDB, user_service: UserService = Depends(get_user_service)
 ) -> UserInDB:
-    result = await user_service.update_role(user_id, data)
+    result = await user_service.update_object(user_id, data)
 
     if not result:
         raise HTTPException(
@@ -84,7 +84,7 @@ async def delete_user(
     user_id: int,
     user_service: UserService = Depends(get_user_service)
 ) -> Dict:
-    success = await user_service.delete_user(user_id)
+    success = await user_service.delete_object(user_id)
 
     if not success:
         raise HTTPException(

@@ -18,7 +18,7 @@ router = APIRouter(prefix="/roles", tags=["roles"])
 async def get_roles(
     role_service: RoleService = Depends(get_role_service),
 ) -> List[RoleInDB]:
-    roles = await role_service.get_roles()
+    roles = await role_service.get_all_objects()
     if not roles:
         return None
     return roles
@@ -34,7 +34,7 @@ async def create_role(
     data: RoleCreate, role_service: RoleService = Depends(get_role_service)
 ) -> RoleCreate:
     try:
-        role = await role_service.create_role(data)
+        role = await role_service.create_object(data)
         return role
     except ValueError as e:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
@@ -50,7 +50,7 @@ async def get_role_by_id(
     role_id: int,
     role_service: RoleService = Depends(get_role_service),
 ) -> RoleInDB:
-    result = await role_service.get_role_by_id(role_id)
+    result = await role_service.get_object_by_id(role_id)
     if not result:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND, detail="Роль не была найдена."
@@ -62,7 +62,7 @@ async def get_role_by_id(
 async def update_role(
     role_id: int, data: RoleInDB, role_service: RoleService = Depends(get_role_service)
 ) -> RoleInDB:
-    result = await role_service.update_role(role_id, data)
+    result = await role_service.update_object(role_id, data)
     return result
 
 
@@ -74,7 +74,7 @@ async def delete_role(
     role_id: int,
     role_service: RoleService = Depends(get_role_service)
 ) -> Dict:
-    success = await role_service.delete_role(role_id)
+    success = await role_service.delete_object(role_id)
 
     if not success:
         raise HTTPException(
