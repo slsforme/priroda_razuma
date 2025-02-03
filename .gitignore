@@ -23,7 +23,8 @@ celerybeat.pid
 .*.sw?
 .cache
 
+migration/
 migrations/
-alembic.ini
+*.ini
 
 .log
