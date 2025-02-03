@@ -7,3 +7,4 @@
     - Документация API
     - Dockerfile
     - Dockercompose
+    - Тестирование API

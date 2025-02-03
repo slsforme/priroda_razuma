@@ -5,17 +5,20 @@ from sqlalchemy import update, select
 
 from db.db import connection
 from models.models import User
+from .base import IRepository
 
 
-class UserRepository:
+class UserRepository(IRepository):
     @connection
-    async def get_users(self, session: AsyncSession) -> List[User]:
+    async def get_all(self, session: AsyncSession) -> List[User]:
         result = await session.execute(select(User))
         return result.scalars().all()
 
     @connection
-    async def create_user(self, data: Dict, session: AsyncSession) -> User:
-        existing_user = await session.execute(select(User).filter(User.fio == data.model_dump()["fio"]))
+    async def create(self, data: Dict, session: AsyncSession) -> User:
+        existing_user = await session.execute(
+            select(User).filter(User.fio == data.model_dump()["fio"])
+        )
         if existing_user:
             raise ValueError("Пользователь с таким ФИО уже существует в системе.")
         user = User(**data.dict())
@@ -24,12 +27,12 @@ class UserRepository:
         return user
 
     @connection
-    async def get_user_by_id(self, user_id: int, session: AsyncSession = None) -> User:
+    async def get_by_id(self, user_id: int, session: AsyncSession = None) -> User:
         result = await session.execute(select(User).filter(User.id == user_id))
         return result.scalars().first()
 
     @connection
-    async def update_user(
+    async def update(
         self, user_id: int, data: Dict, session: AsyncSession = None
     ) -> User:
         update_data = data.model_dump(exclude_unset=True)
@@ -47,7 +50,7 @@ class UserRepository:
         return result.scalar_one_or_none()
 
     @connection
-    async def delete_user(self, user_id: int, sessions: AsyncSession = None) -> bool:
+    async def delete(self, user_id: int, sessions: AsyncSession = None) -> bool:
         result = await self.get_user_by_id(user_id)
         user = result.scalar_one_or_none()
 
@@ -58,4 +61,3 @@ class UserRepository:
         await session.commit()
 
         return True
-

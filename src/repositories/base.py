@@ -1,24 +1,32 @@
 from abc import ABC, abstractmethod
-from typing import List
+from typing import List, TypeVar, Generic, Dict
+from sqlalchemy.ext.asyncio import AsyncSession
+
+T = TypeVar("T")
 
 
-class AbstractRepository(ABC):
+class IRepository(ABC, Generic[T]):
     @abstractmethod
-    async def add():
-        raise NotImplementedError
-
-    @abstractmethod
-    async def get() -> List[...]:
-        raise NotImplementedError
-
-    @abstractmethod
-    async def update():
-        raise NotImplementedError
+    async def create(self, data: Dict, session: AsyncSession) -> T:
+        """Метод для получения всех сущностей"""
+        pass
 
     @abstractmethod
-    async def delete():
-        raise NotImplementedError
+    async def update(self, data: Dict, session: AsyncSession) -> T:
+        """Метод для обновления сущности"""
+        pass
 
     @abstractmethod
-    async def get_by_id() -> ...:
-        raise NotImplementedError
+    async def delete(self, id: int, session: AsyncSession) -> bool:
+        """Метод удаления сущности"""
+        pass
+
+    @abstractmethod
+    async def get_all(self, session: AsyncSession) -> List[T]:
+        """Метод для получения всех сущностей"""
+        pass
+
+    @abstractmethod
+    async def get_by_id(self, id: int, session: AsyncSession) -> T:
+        """Метод для получения сущности по id"""
+        pass
