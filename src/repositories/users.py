@@ -1,9 +1,3 @@
-from typing import List, Dict
-from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.future import select
-from sqlalchemy import update, select
-
-from db.db import connection
 from models.models import User
 from .base import BaseRepository
 

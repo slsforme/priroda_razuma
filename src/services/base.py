@@ -1,13 +1,13 @@
 from abc import ABC, abstractmethod
 from typing import List, Dict, TypeVar, Generic
 
-T = TypeVar('T')
+T = TypeVar("T")
 
 
 class BaseService(ABC, Generic[T]):
     def __init__(self, repository: T):
         self.repository = repository
-    
+
     async def get_all_objects(self) -> List[T]:
         return await self.repository.get_all()
 
@@ -22,8 +22,3 @@ class BaseService(ABC, Generic[T]):
 
     async def delete_object(self, id: int) -> bool:
         return await self.repository.delete(id)
-
-
-
-
- 

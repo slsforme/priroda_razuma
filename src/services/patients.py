@@ -1,4 +1,3 @@
-from typing import List, Dict
 from repositories.roles import PatientRepository
 from .base import Service
 

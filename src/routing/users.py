@@ -76,13 +76,10 @@ async def update_user(
 
     return result
 
-@router.delete(
-    "/{user_id}",
-    description="Удаление пользователя."
-)
+
+@router.delete("/{user_id}", description="Удаление пользователя.")
 async def delete_user(
-    user_id: int,
-    user_service: UserService = Depends(get_user_service)
+    user_id: int, user_service: UserService = Depends(get_user_service)
 ) -> Dict:
     success = await user_service.delete_object(user_id)
 
@@ -90,5 +87,5 @@ async def delete_user(
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND, detail="Пользователь не был найден."
         )
-    
+
     return {"detail": "Пользователь была успешно удалён."}

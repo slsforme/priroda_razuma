@@ -1,4 +1,3 @@
-from typing import List, Dict
 from repositories.users import UserRepository
 from .base import BaseService
 

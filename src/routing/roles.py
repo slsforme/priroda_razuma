@@ -66,13 +66,9 @@ async def update_role(
     return result
 
 
-@router.delete(
-    "/{role_id}",
-    description="Удаление роли."
-)
+@router.delete("/{role_id}", description="Удаление роли.")
 async def delete_role(
-    role_id: int,
-    role_service: RoleService = Depends(get_role_service)
+    role_id: int, role_service: RoleService = Depends(get_role_service)
 ) -> Dict:
     success = await role_service.delete_object(role_id)
 
@@ -80,7 +76,5 @@ async def delete_role(
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND, detail="Роль не была найдена."
         )
-    
+
     return {"detail": "Роль была успешно удалена."}
-
-

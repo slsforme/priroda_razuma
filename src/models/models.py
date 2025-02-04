@@ -10,7 +10,9 @@ class User(Base):
     fio: Mapped[str] = mapped_column(String(255), nullable=False, unique=True)
     login: Mapped[str] = mapped_column(String(50), nullable=False)
     password: Mapped[str] = mapped_column(String(64), nullable=False)
-    role_id: Mapped[int] = mapped_column(ForeignKey("roles.id", ondelete="CASCADE"), nullable=False)
+    role_id: Mapped[int] = mapped_column(
+        ForeignKey("roles.id", ondelete="CASCADE"), nullable=False
+    )
 
 
 class Role(Base):
