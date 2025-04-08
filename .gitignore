@@ -28,3 +28,5 @@ migrations/
 *.ini
 
 .log
+
+certs/

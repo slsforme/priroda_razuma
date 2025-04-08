@@ -1,6 +1,8 @@
+from pydantic import BaseModel, EmailStr, constr, field_validator, ValidationError, validator
+import bcrypt
+
 from datetime import datetime
 from typing import Optional
-from pydantic import BaseModel, EmailStr, constr, field_validator, ValidationError
 
 
 class UserBase(BaseModel):
@@ -12,6 +14,12 @@ class UserBase(BaseModel):
 class UserCreate(UserBase):
     password: constr(min_length=6, max_length=64)
 
+    @validator('password')
+    def hash_password(cls, password: str) -> bytes:
+        salt = bcrypt.gensalt()
+        pwd_bytes: bytes = password.encode()
+        return bcrypt.hashpw(pwd_bytes, salt)
+
 
 class UserUpdate(UserBase):
     fio: Optional[constr(min_length=3, max_length=255)] = None
@@ -22,6 +30,8 @@ class UserUpdate(UserBase):
 
 class UserInDB(UserBase):
     id: int
+    created_at: datetime
+    updated_at: datetime
 
     class Config:
         from_attributes = True

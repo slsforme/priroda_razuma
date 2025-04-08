@@ -3,7 +3,6 @@ from typing import List, Dict, TypeVar, Generic
 
 T = TypeVar("T")
 
-
 class BaseService(ABC, Generic[T]):
     def __init__(self, repository: T):
         self.repository = repository

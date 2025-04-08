@@ -1,7 +1,7 @@
-from repositories.roles import PatientRepository
-from .base import Service
+from repositories.patients import PatientRepository
+from .base import BaseService
 
 
-class RoleService(Service):
+class PatientService(BaseService):
     def __init__(self, repository: PatientRepository):
         super().__init__(repository)

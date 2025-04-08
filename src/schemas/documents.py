@@ -1,19 +1,36 @@
 from typing import Optional
-from pydantic import BaseModel, constr
+from pydantic import BaseModel, constr, validator
+from datetime import datetime
+from urllib.parse import quote
 
+from models.models import SubDirectories
 class DocumentBase(BaseModel):
-    name: constr(min_length=3, max_length=255)
-    data: bytes  
+    name: str
+    patient_id: int
+    subdirectory_type: SubDirectories
+    author_id: Optional[int] = None
+
 
 class DocumentCreate(DocumentBase):
-    pass
+    data: bytes
+
 
 class DocumentUpdate(DocumentBase):
-    name: Optional[constr(min_length=3, max_length=255)]  
-    data: Optional[bytes]  
+    name: Optional[str] = None
+    patient_id: Optional[int] = None
+    subdirectory_type: Optional[SubDirectories] = None
+    author_id: Optional[int] = None
+    data: Optional[bytes] = None
+
+    @validator('name')
+    def decode_name(cls, name: str) -> bytes:
+        return quote(name)
+
 
 class DocumentInDB(DocumentBase):
     id: int
-
+    created_at: datetime
+    updated_at: datetime
+    
     class Config:
-        orm_mode = True
+        from_attributes = True

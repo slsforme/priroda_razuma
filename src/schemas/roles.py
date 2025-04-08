@@ -1,5 +1,6 @@
 from typing import Optional
 from pydantic import BaseModel, constr
+from datetime import datetime
 
 
 class RoleBase(BaseModel):
@@ -18,6 +19,8 @@ class RoleUpdate(RoleBase):
 
 class RoleInDB(RoleBase):
     id: int
+    created_at: datetime
+    updated_at: datetime
 
     class Config:
         from_attributes = True

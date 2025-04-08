@@ -50,6 +50,9 @@ class BaseRepository(IRepository, Generic[D]):
 
     @connection
     async def create(self, data: Dict, session: AsyncSession) -> D:
+        if hasattr(data, "model_dump"):
+            data = data.model_dump()
+
         model_instance = self.model(**data)
         session.add(model_instance)
         await session.commit()
@@ -58,12 +61,15 @@ class BaseRepository(IRepository, Generic[D]):
     @connection
     async def get_by_id(self, obj_id: int, session: AsyncSession) -> D:
         result = await session.execute(
-            select(self.model).filter(self.model.id == obj_id)
+            select(self.model).where(self.model.id == obj_id)
         )
         return result.scalars().first()
 
     @connection
     async def update(self, obj_id: int, data: Dict, session: AsyncSession) -> D:
+        if hasattr(data, "model_dump"):
+            data = data.model_dump()
+
         update_data = data
 
         if not update_data:
@@ -83,7 +89,7 @@ class BaseRepository(IRepository, Generic[D]):
 
     @connection
     async def delete(self, obj_id: int, session: AsyncSession) -> bool:
-        result = await self.get_by_id(obj_id, session)
+        result = await self.get_by_id(obj_id)
         if not result:
             return False
 
