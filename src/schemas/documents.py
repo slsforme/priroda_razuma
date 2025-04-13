@@ -22,10 +22,6 @@ class DocumentUpdate(DocumentBase):
     author_id: Optional[int] = None
     data: Optional[bytes] = None
 
-    @validator('name')
-    def decode_name(cls, name: str) -> bytes:
-        return quote(name)
-
 
 class DocumentInDB(DocumentBase):
     id: int

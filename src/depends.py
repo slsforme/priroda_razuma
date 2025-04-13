@@ -9,10 +9,6 @@ from services.patients import PatientService
 from services.documents import DocumentService
 
 
-"""
-Файл внедрения зависимостей
-"""
-
 user_repository = UserRepository()
 role_repository = RoleRepository()
 patient_repository = PatientRepository()

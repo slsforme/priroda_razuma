@@ -8,6 +8,7 @@ class Token(BaseModel):
     access_token: str
     refresh_token: str
     token_type: str = "Bearer"
+    user_id: int
 
 class UserLogin(BaseUser):
     pass
