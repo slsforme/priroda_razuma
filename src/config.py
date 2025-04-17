@@ -33,7 +33,7 @@ class Settings(BaseSettings):
     api_v1_prefix: str = "/api/v1"
     auth_jwt: ClassVar[AuthJWT] = AuthJWT()
     cache_ttl: ClassVar[int] = 3600
-    redis_url: ClassVar[str] = os.getenv("REDIS_URL", "redis://default_host:6379")  
+    redis_url: ClassVar[str] = os.getenv("REDIS_URL", "redis://localhost:6379")  
 
     def get_db_url(self):
         return (

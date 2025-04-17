@@ -118,7 +118,6 @@ def create_base_router(
         async def create(data: create_schema, service = Depends(service_dependency)) -> read_schema:
             try:
                 obj = await service.create_object(data)
-                await invalidate_cache()
                 return obj
             except ValueError as e:
                 logger.error(f"Validation error: {str(e)}")

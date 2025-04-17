@@ -1,0 +1,250 @@
+2025-04-14T00:06:10.205632+0300 INFO Metrics updated successfully
+2025-04-14T00:06:59.972689+0300 INFO Metrics updated successfully
+2025-04-14T00:09:49.189996+0300 INFO Metrics updated successfully
+2025-04-14T00:11:09.328567+0300 INFO Metrics updated successfully
+2025-04-14T00:11:17.597659+0300 INFO Metrics updated successfully
+2025-04-14T00:11:31.345345+0300 INFO Metrics updated successfully
+2025-04-14T00:14:20.922318+0300 INFO Metrics updated successfully
+2025-04-14T00:15:27.027485+0300 INFO Metrics updated successfully
+2025-04-14T00:15:31.389609+0300 INFO Metrics updated successfully
+2025-04-14T00:20:31.400581+0300 INFO Metrics updated successfully
+2025-04-14T00:23:04.342937+0300 INFO Metrics updated successfully
+2025-04-14T00:23:25.915711+0300 INFO Metrics updated successfully
+2025-04-14T00:28:16.388769+0300 INFO Metrics updated successfully
+2025-04-14T00:29:08.795018+0300 INFO Metrics updated successfully
+2025-04-14T00:32:56.971997+0300 INFO Metrics updated successfully
+2025-04-14T00:34:03.702861+0300 INFO Metrics updated successfully
+2025-04-14T00:34:06.236815+0300 INFO Metrics updated successfully
+2025-04-14T00:37:55.651977+0300 INFO Metrics updated successfully
+2025-04-14T00:38:00.797195+0300 INFO Metrics updated successfully
+2025-04-14T00:39:07.801498+0300 INFO Metrics updated successfully
+2025-04-14T00:39:16.472158+0300 INFO Metrics updated successfully
+2025-04-14T00:39:26.828338+0300 INFO Metrics updated successfully
+2025-04-14T00:44:26.840478+0300 INFO Metrics updated successfully
+2025-04-14T00:48:22.645615+0300 INFO Metrics updated successfully
+2025-04-14T00:48:39.896011+0300 INFO Metrics updated successfully
+2025-04-14T00:48:54.001865+0300 INFO Metrics updated successfully
+2025-04-14T00:50:28.834307+0300 INFO Metrics updated successfully
+2025-04-14T00:52:13.779525+0300 INFO Metrics updated successfully
+2025-04-14T00:52:18.852187+0300 INFO Metrics updated successfully
+2025-04-14T00:52:25.975949+0300 INFO Metrics updated successfully
+2025-04-14T00:53:10.934658+0300 INFO Metrics updated successfully
+2025-04-14T00:54:18.777531+0300 INFO Metrics updated successfully
+2025-04-14T00:54:28.978092+0300 INFO Metrics updated successfully
+2025-04-14T00:55:04.866796+0300 INFO Metrics updated successfully
+2025-04-14T00:55:22.836208+0300 INFO Metrics updated successfully
+2025-04-14T00:56:39.114836+0300 INFO Metrics updated successfully
+2025-04-14T00:56:45.572923+0300 INFO Metrics updated successfully
+2025-04-14T00:57:26.105880+0300 INFO Metrics updated successfully
+2025-04-14T00:58:00.329807+0300 INFO Metrics updated successfully
+2025-04-14T00:59:09.364449+0300 INFO Metrics updated successfully
+2025-04-14T00:59:11.138507+0300 INFO Metrics updated successfully
+2025-04-14T00:59:14.961676+0300 INFO Metrics updated successfully
+2025-04-14T01:04:14.973911+0300 INFO Metrics updated successfully
+2025-04-14T01:06:54.397585+0300 ERROR Metrics update error: name 'logger' is not defined
+2025-04-14T01:06:54.398020+0300 ERROR Failed to update metrics: name 'logger' is not defined
+2025-04-14T01:07:07.075366+0300 ERROR Metrics update error: name 'logger' is not defined
+2025-04-14T01:07:07.075874+0300 ERROR Failed to update metrics: name 'logger' is not defined
+2025-04-14T01:07:18.540598+0300 ERROR Metrics update error: name 'logger' is not defined
+2025-04-14T01:07:18.541046+0300 ERROR Failed to update metrics: name 'logger' is not defined
+2025-04-14T01:07:37.003191+0300 ERROR Metrics update error: name 'logger' is not defined
+2025-04-14T01:07:37.003566+0300 ERROR Failed to update metrics: name 'logger' is not defined
+2025-04-14T01:08:00.098181+0300 ERROR Failed to update metrics: name 'logger' is not defined
+2025-04-14T01:08:29.733911+0300 INFO hi 9.0000000000000000
+2025-04-14T01:08:29.745173+0300 INFO Metrics updated successfully
+2025-04-14T01:08:45.806560+0300 INFO Metrics updated successfully
+2025-04-14T01:09:09.672139+0300 INFO Metrics updated successfully
+2025-04-14T01:14:09.677257+0300 INFO Metrics updated successfully
+2025-04-14T19:39:07.222970+0300 INFO Metrics updated successfully
+2025-04-14T19:39:32.251348+0300 INFO Metrics updated successfully
+2025-04-14T19:44:32.270464+0300 INFO Metrics updated successfully
+2025-04-14T19:45:33.087979+0300 INFO Metrics updated successfully
+2025-04-14T19:45:59.076203+0300 INFO Metrics updated successfully
+2025-04-14T19:46:36.737254+0300 INFO Metrics updated successfully
+2025-04-14T19:46:41.907437+0300 INFO Metrics updated successfully
+2025-04-14T19:47:01.150041+0300 INFO Metrics updated successfully
+2025-04-14T19:47:09.043328+0300 INFO Metrics updated successfully
+2025-04-14T19:47:37.346053+0300 INFO Metrics updated successfully
+2025-04-14T19:47:39.557365+0300 INFO Metrics updated successfully
+2025-04-14T19:47:45.021277+0300 INFO Metrics updated successfully
+2025-04-14T19:47:58.435064+0300 INFO Metrics updated successfully
+2025-04-14T19:48:15.244662+0300 INFO Metrics updated successfully
+2025-04-14T19:48:28.865485+0300 INFO Metrics updated successfully
+2025-04-14T19:48:31.658433+0300 INFO Metrics updated successfully
+2025-04-14T19:48:44.898820+0300 INFO Metrics updated successfully
+2025-04-14T19:52:43.885858+0300 INFO Metrics updated successfully
+2025-04-14T22:22:25.008417+0300 INFO Metrics updated successfully
+2025-04-14T22:22:43.369303+0300 INFO Metrics updated successfully
+2025-04-14T22:24:04.150745+0300 INFO Metrics updated successfully
+2025-04-14T22:26:01.340976+0300 INFO Metrics updated successfully
+2025-04-14T22:26:04.237976+0300 INFO Metrics updated successfully
+2025-04-14T22:26:37.907881+0300 INFO Metrics updated successfully
+2025-04-14T22:28:17.362028+0300 INFO Metrics updated successfully
+2025-04-14T22:28:27.074773+0300 INFO Metrics updated successfully
+2025-04-14T22:29:03.021953+0300 INFO Metrics updated successfully
+2025-04-14T22:29:30.332757+0300 INFO Metrics updated successfully
+2025-04-14T22:34:30.338743+0300 INFO Metrics updated successfully
+2025-04-14T22:35:08.365699+0300 INFO Metrics updated successfully
+2025-04-14T22:35:26.986402+0300 INFO Metrics updated successfully
+2025-04-14T22:35:44.996089+0300 INFO Metrics updated successfully
+2025-04-14T22:39:22.245254+0300 ERROR Create error: Traceback (most recent call last):
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/src/routing/base.py", line 121, in create
+    await invalidate_cache()
+          ^^^^^^^^^^^^^^^^
+NameError: name 'invalidate_cache' is not defined
+
+2025-04-14T22:39:33.504936+0300 INFO Metrics updated successfully
+2025-04-14T22:39:33.691224+0300 ERROR Create error: Traceback (most recent call last):
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 545, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 176, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 267, in __bind_execute
+    data, status, _ = await self.__do_execute(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/asyncpg/prepared_stmt.py", line 256, in __do_execute
+    return await executor(protocol)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.UniqueViolationError: duplicate key value violates unique constraint "patients_fio_key"
+DETAIL:  Key (fio)=(Иванко София Сергеевна) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.IntegrityError: <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "patients_fio_key"
+DETAIL:  Key (fio)=(Иванко София Сергеевна) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/src/routing/base.py", line 120, in create
+    obj = await service.create_object(data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/src/services/base.py", line 14, in create_object
+    return await self.repository.create(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/src/db/db.py", line 50, in wrapper
+    raise e
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/src/db/db.py", line 47, in wrapper
+    return await method(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/src/repositories/base.py", line 58, in create
+    await session.commit()
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 1011, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/slsforme/Programming/python/fastapi/priroda_razuma/env/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.IntegrityError: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "patients_fio_key"
+DETAIL:  Key (fio)=(Иванко София Сергеевна) already exists.
+[SQL: INSERT INTO patients (fio, age) VALUES ($1::VARCHAR, $2::INTEGER) RETURNING patients.id, patients.created_at, patients.updated_at]
+[parameters: ('Иванко София Сергеевна', 9)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-04-14T22:44:33.535956+0300 INFO Metrics updated successfully
+2025-04-14T22:49:33.560379+0300 INFO Metrics updated successfully
+2025-04-14T22:54:33.584002+0300 INFO Metrics updated successfully
+2025-04-14T22:59:33.610148+0300 INFO Metrics updated successfully
+2025-04-14T23:04:33.627813+0300 INFO Metrics updated successfully
+2025-04-14T23:04:35.665093+0300 INFO Metrics updated successfully
+2025-04-14T23:09:35.691717+0300 INFO Metrics updated successfully
+2025-04-14T23:14:56.695113+0300 INFO Metrics updated successfully
+2025-04-14T23:15:06.016032+0300 INFO Metrics updated successfully
+2025-04-14T23:18:18.171495+0300 INFO Metrics updated successfully
+2025-04-14T23:18:37.063287+0300 INFO Metrics updated successfully
+2025-04-14T23:23:37.071366+0300 INFO Metrics updated successfully
+2025-04-14T23:28:37.093587+0300 INFO Metrics updated successfully
+2025-04-14T23:33:37.120334+0300 INFO Metrics updated successfully
+2025-04-14T23:37:41.015670+0300 INFO Metrics updated successfully
+2025-04-14T23:39:11.862826+0300 INFO Metrics updated successfully
+2025-04-14T23:39:20.081409+0300 INFO Metrics updated successfully
+2025-04-14T23:44:20.103247+0300 INFO Metrics updated successfully
+2025-04-14T23:49:20.130808+0300 INFO Metrics updated successfully
+2025-04-14T23:54:20.157841+0300 INFO Metrics updated successfully
+2025-04-14T23:59:20.193923+0300 INFO Metrics updated successfully
